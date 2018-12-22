@@ -1,0 +1,29 @@
+process.env.http_proxy
+
+var http = require("http");
+
+var options = {
+  host: "proxy",
+  port: 8080,
+  path: "http://www.google.com",
+  headers: {
+    Host: "www.google.com"
+  }
+};
+http.get(options, function(res) {
+  console.log(res);
+  res.pipe(process.stdout);
+});
+
+
+process.env.https_proxy
+
+var http = require('http');
+
+http.get ({
+    host: '127.0.0.1',
+    port: 8888,
+    path: 'https://www.google.com/accounts/OAuthGetRequestToken'
+}, function (response) {
+    console.log (response);
+});

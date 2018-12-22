@@ -1,0 +1,1 @@
+{"name":"axios","version":"0.9.1","description":"Promise based HTTP client for the browser and node.js","keywords":["xhr","http","ajax","promise","node"],"repo":{"type":"git","url":"https://github.com/mzabriskie/axios.git"},"license":"MIT"}
