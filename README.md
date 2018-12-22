@@ -86,12 +86,27 @@ react-native run-ios
 * 2017-06-08 修改联系人数据从服务端获取，包括联系人姓名、头像等，其他部分数据暂时为测试数据。
 
 # 截图
-<img src='./screenshots/new.jpg'>
+
+## iOS截图（iPhone8）
+<div>
+<img src='./screenshots/ios01.png' width=280>
+<img src='./screenshots/ios02.png' width=280>
+<img src='./screenshots/ios03.png' width=280>
+</div>
+<div>
+<img src='./screenshots/ios04.png' width=280>
+<img src='./screenshots/ios05.png' width=280>
+<img src='./screenshots/ios06.png' width=280>
+</div>
+<div>
+<img src='./screenshots/ios07.png' width=280>
+<img src='./screenshots/ios08.png' width=280>
+<img src='./screenshots/ios09.png' width=280>
+</div>
+
+## Android截图
 <img src='./screenshots/01.png'>
 <img src='./screenshots/02.png'>
 <img src='./screenshots/03.png'>
 <img src='./screenshots/04.png'>
-<img src='./screenshots/05.png'>
-<img src='./screenshots/06.png'>
-<img src='./screenshots/07.png'>
-<img src='./screenshots/08.png'>
+<img src='./screenshots/new.jpg'>
