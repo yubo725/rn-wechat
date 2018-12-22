@@ -11,15 +11,34 @@
 <img src='./screenshots/rnwechat.png'>
 
 # 运行方法
-1. 在项目根目录下执行npm install
-2. 项目中的导航组件使用的ReactNavigation，所以还需要执行npm install --save react-navigation
-3. 二维码扫描组件使用了开源项目react-native-camera和AC-QRCode-RN，图片选择和裁剪使用了react-native-image-crop-picker库，Toast提示使用了@remobile/react-native-toast，感谢这几个项目的作者！请按这四个项目的文档添加至RNWeChat项目中，地址为：
-  * https://github.com/lwansbrough/react-native-camera
-  * https://github.com/MarnoDev/AC-QRCode-RN
-  * https://github.com/ivpusic/react-native-image-crop-picker
-  * https://github.com/remobile/react-native-toast
-4. 上面几步执行结束后，再执行react-native run-android即可
-5. apk目录下有RNWeChat-release.apk文件，可直接安装查看效果
+1. 克隆代码：
+
+```
+git clone git@github.com:yubo725/rn-wechat.git
+```
+
+2. 进入项目根目录并安装依赖：
+
+```
+cd RNWeChat
+npm install
+```
+
+3. 运行项目到模拟器或真机：
+
+```
+// Android
+react-native run-android
+
+// iOS
+react-native run-ios
+```
+
+4. **登录说明**
+
+```
+由于第三方IM的限制，当前已无法注册新用户，想登录体验的朋友，可以使用测试账号：hello/hello
+```
 
 # 注意
 * **目前接口做了限制，频繁请求的话可能导致IP被暂时封掉，而且每个IP每天的请求流量也是有限制的，所以不要频繁请求接口**
@@ -30,22 +49,22 @@
 
 **请确保项目的android目录下的gradlew文件有可执行权限，若无可执行权限，改成可执行**
 
-* Android打release包时请使用自己的签名文件和签名配置，请注意android/app/build.gradle文件中的
-```
-signingConfigs {
-    release {
-        storeFile file(MYAPP_RELEASE_STORE_FILE)
-        storePassword MYAPP_RELEASE_STORE_PASSWORD
-        keyAlias MYAPP_RELEASE_KEY_ALIAS
-        keyPassword MYAPP_RELEASE_KEY_PASSWORD
-    }
-}
-```
+* Android打release包时请使用自己的签名文件和签名配置，具体请参考文档：[打包APK](https://reactnative.cn/docs/0.51/signed-apk-android/)
 
 # 已实现功能
-* 目前实现了登录、注册、修改昵称、修改头像、单聊（仅文本消息和图片消息）、发朋友圈、朋友圈点赞和评论、扫一扫、与图灵机器人聊天等功能
+- [x] 登录、注册
+- [x] 单聊发送文本与图片
+- [x] 发朋友圈
+- [x] 朋友圈点赞与评论
+- [x] 与机器人聊天
+- [x] 修改昵称与头像
 
-# 更新
+# 未实现功能
+- [ ] 群聊
+- [ ] 发送位置、表情、文件、视频等
+
+# 更新记录
+* 2018-12-22 更新项目，RN为当前的最新版本0.57.8，react-navigation库为当前的最新版本3.x
 * 2018-03-09 删除react-native-camera库和ac-qrcode库，扫一扫功能不可用(由于官方react-native-camera库更新了，导致我的iOS项目里使用一直报错无法解决，遂暂时去掉扫一扫功能，后续解决问题了再恢复)
 * 2018-01-19 加入图灵聊天机器人
 * 2018-01-10 接口做上传限制，禁止上传非图片类型的文件
