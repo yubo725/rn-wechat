@@ -59,6 +59,7 @@ react-native run-ios
 - [ ] 适配刘海屏
 
 # 更新记录
+* 2019-05-14 服务器迁移，域名更改为rnwechat.yubo.me，原来的代码移到deprecated分支，目前使用dev开发分支，IM采用极光IM
 * 2018-12-22 更新项目，RN为当前的最新版本0.57.8，react-navigation库为当前的最新版本3.x
 * 2018-03-09 删除react-native-camera库和ac-qrcode库，扫一扫功能不可用(由于官方react-native-camera库更新了，导致我的iOS项目里使用一直报错无法解决，遂暂时去掉扫一扫功能，后续解决问题了再恢复)
 * 2018-01-19 加入图灵聊天机器人
