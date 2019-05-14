@@ -1,0 +1,24 @@
+{
+  "name": "react-native-fetch-blob",
+  "version": "0.10.6",
+  "summary": "A project committed to make file acess and data transfer easier, effiecient for React Native developers.",
+  "requires_arc": true,
+  "license": "MIT",
+  "homepage": "n/a",
+  "authors": {
+    "wkh237": "xeiyan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/wkh237/react-native-fetch-blob",
+    "tag": "v0.10.6"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "dependencies": {
+    "React/Core": [
+
+    ]
+  }
+}

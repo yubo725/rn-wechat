@@ -1,0 +1,1 @@
+../../../../../node_modules/jmessage-react-plugin/ios/RCTJMessageModule/RCTJMessageModule.h

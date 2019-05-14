@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'RNWeChat' do
+
+  pod 'RSKImageCropper'
+  pod 'QBImagePickerController'
+  pod 'JCoreRN', :path => '../node_modules/jcore-react-native'
+  pod 'JMessageRN', :path => '../node_modules/jmessage-react-plugin'
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'React', :path => '../node_modules/react-native'
+  pod 'react-native-sqlite-storage', :path => '../node_modules/react-native-sqlite-storage'
+  pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    
+    # The following is needed to ensure the "archive" step works in XCode.
+    # It removes React & Yoga from the Pods project, as it is already included in the main project.
+    # Without this, you'd see errors when you archive like:
+    # "Multiple commands produce ... libReact.a"
+    # "Multiple commands produce ... libyoga.a"
+    
+    targets_to_ignore = %w(React yoga)
+    
+    if targets_to_ignore.include? target.name
+      target.remove_from_project
+    end
+    
+  end
+end

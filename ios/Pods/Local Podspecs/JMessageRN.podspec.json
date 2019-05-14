@@ -1,0 +1,46 @@
+{
+  "name": "JMessageRN",
+  "version": "2.5.3",
+  "homepage": "https://github.com/jpush/jmessage-react-native",
+  "summary": "a jmessage plugin for react native application",
+  "license": "ISC",
+  "authors": {
+    "huminios": "380108184@qq.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/jpush/jmessage-react-native.git",
+    "tag": "2.5.3"
+  },
+  "source_files": "ios/RCTJMessageModule/*.{h,m}",
+  "preserve_paths": "*.js",
+  "frameworks": [
+    "UIKit",
+    "CFNetwork",
+    "CoreFoundation",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "Foundation",
+    "Security",
+    "CoreLocation",
+    "CoreAudio",
+    "AudioToolbox",
+    "AVFoundation"
+  ],
+  "weak_frameworks": "UserNotifications",
+  "libraries": [
+    "z",
+    "resolv",
+    "sqlite3.0"
+  ],
+  "vendored_libraries": "ios/RCTJMessageModule/*.a",
+  "vendored_frameworks": "ios/RCTJMessageModule/JMessage.framework",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

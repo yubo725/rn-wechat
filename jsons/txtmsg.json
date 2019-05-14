@@ -1,0 +1,43 @@
+{
+  "text": "haha",
+  "type": "text",
+  "unreceiptCount": 0,
+  "createTime": 1545987118315,
+  "extras": {},
+  "target": {
+    "isFriend": false,
+    "isInBlackList": false,
+    "isNoDisturb": false,
+    "noteName": "",
+    "type": "user",
+    "username": "yubo666",
+    "noteText": "",
+    "region": "",
+    "appKey": "e621de6a04c96f0dd590b9b5",
+    "nickname": "",
+    "gender": "unknown",
+    "address": "",
+    "avatarThumbPath": "",
+    "birthday": 0,
+    "signature": ""
+  },
+  "from": {
+    "isFriend": false,
+    "isInBlackList": false,
+    "isNoDisturb": false,
+    "noteName": "",
+    "type": "user",
+    "username": "yubo@qq.com",
+    "noteText": "",
+    "region": "",
+    "appKey": "e621de6a04c96f0dd590b9b5",
+    "nickname": "",
+    "gender": "unknown",
+    "address": "",
+    "avatarThumbPath": "",
+    "birthday": 0,
+    "signature": ""
+  },
+  "serverMessageId": "2365403853",
+  "id": "2"
+}

@@ -1,0 +1,1 @@
+../../../../../node_modules/jcore-react-native/ios/RCTJCoreModule/RCTJCoreModule.h
