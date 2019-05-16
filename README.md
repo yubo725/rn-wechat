@@ -5,7 +5,7 @@
 * iOS的朋友如果运行项目出现问题，可以参考<a href="./iOS-README.md">这个文档</a>
 
 # Android扫码下载体验
-<img src='./screenshots/rnwechat.png'>
+<img src='./screenshots/qr-code.png'>
 
 # 运行方法
 1. 克隆代码：
