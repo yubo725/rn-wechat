@@ -4,9 +4,6 @@
 * 我新建了一个QQ群，各位如果有任何与该项目有关的问题，或者想交流下ReactNative相关的技术，都可以加进来：419213248
 * iOS的朋友如果运行项目出现问题，可以参考<a href="./iOS-README.md">这个文档</a>
 
-# 服务端变更说明
-2018年1月9号，服务端做了一次迁移，API的域名也改为app.yubo725.top，以前的服务目前已停掉了，如果有APP无法使用的情况，请扫描下方的二维码下载最新的apk，或者clone最新代码
-
 # Android扫码下载体验
 <img src='./screenshots/rnwechat.png'>
 
