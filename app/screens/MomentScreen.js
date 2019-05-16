@@ -4,7 +4,6 @@ import CommonTitleBar from "../views/CommonTitleBar";
 import CountEmitter from "../event/CountEmitter";
 import StorageUtil from "../utils/StorageUtil";
 import LoadingView from "../views/LoadingView";
-import MomentMenuView from "../views/MomentMenuView";
 import { UIManager } from "NativeModules";
 import ReplyPopWin from "../views/ReplyPopWin";
 import Global from "../utils/Global";
@@ -13,6 +12,7 @@ import Base64Utils from "../utils/Base64";
 import TimeUtils from "../utils/TimeUtil";
 import Api from "../api/Api";
 import UserInfoUtil from "../utils/UserInfoUtil";
+import MomentMenuView from "../views/MomentMenuView";
 
 import {
   ART,

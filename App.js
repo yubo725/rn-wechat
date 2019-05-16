@@ -392,6 +392,7 @@ class HomeScreen extends Component {
   }
 
   componentWillUnmount() {
+    Toast.showShortCenter('unregister...')
     this.unregisterListeners();
   }
 }
