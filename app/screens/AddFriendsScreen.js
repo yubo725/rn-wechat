@@ -150,7 +150,7 @@ export default class AddFriendsScreen extends Component {
     fetch(url, { method: "POST", body: formData })
       .then(res => res.json())
       .then(json => {
-        this.setState({ loadingState: STATE_COMPLETE, searchResult: json });
+        this.setState({ loadingState: STATE_COMPLETE, searchResult: json.msg });
         // LogUtil.w(JSON.stringify(json));
       })
       .catch(e => {
